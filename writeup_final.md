@@ -24,6 +24,7 @@ The goals / steps of this project are the following:
 ###1. Pipeline Description
 
 ![alt text][image1]
+
 *Example of an original image*
 
 My pipeline consisted of 7 steps:
@@ -32,11 +33,14 @@ My pipeline consisted of 7 steps:
 2. Blur the image
 3. Apply a mask to only analyze the bottom part of the image where the lane lines are
 4. Find edges using Canny edge dectection
+
 ![alt text][image2]
 5. Using Hough lines find the lines that match most of the points found in step 3
 6. Averaging the Hough lines found in step 4
+
 ![alt text][image3]
 7. Superimposing my average lines using open cv addWeighted()
+
 ![alt text][image4]
 
 
