@@ -29,19 +29,19 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 7 steps:
 
-1. Convert an image to grayscale (while ensuring I knew how many color channels my original and resulting images had)
-2. Blur the image
-3. Apply a mask to only analyze the bottom part of the image where the lane lines are
-4. Find edges using Canny edge dectection
+* Convert an image to grayscale (while ensuring I knew how many color channels my original and resulting images had)
+* Blur the image
+* Apply a mask to only analyze the bottom part of the image where the lane lines are
+* Find edges using Canny edge dectection
 
 ![alt text][image2]
 
-5. Using Hough lines find the lines that match most of the points found in step 3
-6. Averaging the Hough lines found in step 4
+* Using Hough lines find the lines that match most of the points found in step 3
+* Averaging the Hough lines found in step 4
 
 ![alt text][image3]
 
-7. Superimposing my average lines using open cv addWeighted()
+* Superimposing my average lines using open cv addWeighted()
 
 ![alt text][image4]
 
